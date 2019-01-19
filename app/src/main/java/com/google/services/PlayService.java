@@ -42,8 +42,14 @@ public class PlayService extends Service {
         player.stop();
     }
 
+    //دى بقى بتاعة التحكم فى ان السيرفس تفضل شغالة بعد ما اقفل الابليكيشن او لا
+    //عن طريق التحكم فى الفلاجز
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         return START_STICKY;
+//        return START_NOT_STICKY;
+//        return START_REDELIVER_INTENT;
+//        return START_STICKY_COMPATIBILITY;
+
     }
 }
